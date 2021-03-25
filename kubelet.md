@@ -1,0 +1,1 @@
+Kubeadm does NOT deploy kubelets. Must always download and install manually. 

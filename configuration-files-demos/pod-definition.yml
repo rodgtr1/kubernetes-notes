@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata: # Only what k8s expects
+  name: myapp-pod
+  labels: # Can have ANY key:value you want
+    app: myapp
+    type: front-end
+
+spec:
+  containers:
+    - name: nginx-container
+      image: nginx
+
+# kubectl create -f pod-definition.yml
